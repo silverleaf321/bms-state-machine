@@ -2,7 +2,7 @@ class BMSStateMachine:
     def __init__(self):
         self.state = 'off'
         self.voltage = 0
-        self.temperature = 25  # initial temperature
+        self.temperature = 25  # initial temperature???
         self.fault = False
         self.overcharge = False
         self.overdischarge = False
