@@ -25,7 +25,7 @@ class TestBMSStateMachine(unittest.TestCase):
     def test_pre_charge_state(self):
         # try precharge, no faults detected
         self.bms.handle_key_in()
-        self.assertEqual(self.bms.voltage, 90)  # check that precharge is complete
+        self.assertEqual(self.bms.voltage, 90)  # check that precharge is complete (up to 90% of operating voltage)
         self.assertEqual(self.bms.state, 'idle')  # check that it transitions to idle
     
     def test_discharge_data_received(self):

@@ -9,8 +9,9 @@ class BMSStateMachine:
     
     def check_for_fault(self):
         # add more code here, check for short circuit
+        # how to check for short circuit? just get value?
         return self.fault
-    
+
     def check_for_extreme_temperatures(self):
         if self.temperature < 0 or self.temperature > 60:  # temperature range, change this to correct values later
             return True
@@ -45,12 +46,12 @@ class BMSStateMachine:
         self.idle()
     
     def idle(self):
-        print("In Idle state.")
+        print("in idle state")
         self.state = 'discharge_data_received'
         self.discharge_data_received()
     
     def discharge_data_received(self):
-        print("Discharge data received.")
+        print("discharge data received")
         if self.check_for_extreme_temperatures():
             print("extreme temperatures detected, go to off state.")
             self.state = 'off'
@@ -98,5 +99,5 @@ class BMSStateMachine:
 bms = BMSStateMachine()
 
 # key in/out
-bms.handle_key_in()
-bms.turn_key_off()
+# bms.handle_key_in()
+# bms.turn_key_off()
