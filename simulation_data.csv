@@ -1,0 +1,12 @@
+Temperature,Voltage Left,Battery State,On Off
+10,4.1,key in,on
+25,4,discharging,on
+30,4,discharging,on
+40,3.9,discharging,on
+40,3.8,discharging,on
+40,3.8,discharging,on
+50,3.7,discharging,on
+30,3.8,charging,on
+30,3.8,charging,on
+32,3.8,charging,on
+32,2.1,discharging,on
