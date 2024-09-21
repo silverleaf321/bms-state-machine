@@ -31,6 +31,7 @@ def run_bms_test(simulation_data):
                     bms.discharge_data_received()
                 elif battery_state == 'charging': 
                     bms.charge_data_recieved()
+                # elif 
             else:
                 bms.turn_key_off()
                 return 'off'
