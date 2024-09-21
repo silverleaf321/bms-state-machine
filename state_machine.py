@@ -43,9 +43,9 @@ class BMSStateMachine:
     
     def check_for_overdischarge(self):
         if self.voltage < specs.min_voltage:
-            # self.overdischarge = True
+            self.overdischarge = True
             self.state = 'balance'
-        return self.overcharge
+        return self.overdischarge
     
     def handle_key_in(self):
         self.state = 'key_in'
