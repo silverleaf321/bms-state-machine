@@ -42,5 +42,5 @@ def run_bms_test(simulation_data):
 
 if __name__ == "__main__":
     print("********************************************************")
-    simulation_data = load_battery_data('simulation_data - Sheet1.csv')
+    simulation_data = load_battery_data('simulation_data.csv')
     run_bms_test(simulation_data)
